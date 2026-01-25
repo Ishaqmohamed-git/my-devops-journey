@@ -1,33 +1,28 @@
-# Notes
 
-Add your notes here as you progress through this module.
+Which role is navigation of the internet 
+DNS components 
+Including loading dns settings and configuration 
+And there are two types 
+authoritative and recursive servers 
+Name servers : hold the actual dns servers 
+And ip address for the domain name.
 
-## Template
+recursive servers: is where it finds other ways to serve the users query and stores this information to speed up the next query using information it obtained.
 
-When creating a new note, you can use this structure:
+Zone files are files which live in the name servers 
+It stores information about the domain 
+And organises in a human and readable format.
 
-```markdown
-# Topic Name
 
-## Key Concepts
+Zone files contains multiple files record 
 
-- Point 1
-- Point 2
+Cname - allows multiple domain names to translate into ip address 
 
-## Commands
+Mx - mail exchange records include pirpirty value 
+Multiple mail servers - priority means the order that every mail servers are tried 
 
-`command` - what it does
+Txt - any engineers to insert any txt into dns
+It stores text information for a domain 
 
-## Examples
 
-(code examples)
-
-## What I Learned
-
-(your own summary)
-```
-
-## Your Notes
-
-- [ ] Add your first note
-
+Mx is simply put as a company reception desk as it tells the domain which mail server to deliver it to 
