@@ -1,3 +1,278 @@
+Introduction to Networking
+Core Network Devices
+Switch
+
+A switch connects devices within the same network and forwards data based on MAC addresses.
+
+Router
+
+A router connects different networks together and directs traffic based on IP addresses.
+
+Firewall
+
+A firewall monitors incoming and outgoing traffic and enforces security rules based on predefined policies.
+
+These three components form the backbone of modern networks.
+
+LAN and WAN
+LAN (Local Area Network)
+
+Covers a small geographic area
+
+Examples: home network, office network, Wi-Fi
+
+WAN (Wide Area Network)
+
+Covers large geographic areas (cities, countries)
+
+Connects multiple LANs together
+
+Example: the internet
+
+What Is a Computer Network?
+
+A computer network is a group of devices connected together to share resources and information.
+
+Purpose of Networking
+
+Resource sharing
+
+Server-to-server communication
+
+Application deployment
+
+Infrastructure management
+
+Performance optimisation
+
+Networking ensures data moves efficiently and reliably between systems.
+
+IP Addresses
+
+An IP address (Internet Protocol address) is a unique identifier assigned to a device on a network.
+
+Types of IP Addresses
+
+IPv4 – dotted decimal format (e.g. 192.168.1.1)
+
+IPv6 – hexadecimal format separated by colons (e.g. 2001:db8::1)
+
+IP addresses allow devices to locate and communicate with each other.
+
+MAC Addresses
+
+A MAC (Media Access Control) address is a unique identifier assigned to a network interface.
+
+Operates at the Data Link layer (Layer 2)
+
+Used for node-to-node communication
+
+Essential for network communication and security
+
+Ports and Protocols
+Ports
+
+Ports are logical endpoints that allow multiple services to communicate on the same device.
+
+Protocols
+
+Protocols define the rules for data transmission, formatting, and communication.
+
+TCP and UDP
+TCP (Transmission Control Protocol)
+
+Connection-oriented
+
+Requires a handshake before data transfer
+
+Reliable and ordered delivery
+
+Error checking and flow control
+
+TCP use cases:
+
+Web browsing
+
+Email
+
+File transfers
+
+UDP (User Datagram Protocol)
+
+Connectionless
+
+No handshake required
+
+Faster but less reliable
+
+No guaranteed delivery
+
+UDP use cases:
+
+Video streaming
+
+Online gaming
+
+VPN
+
+DNS
+
+OSI Model
+
+The OSI (Open Systems Interconnection) model is a conceptual framework that standardises how devices communicate over a network.
+
+Why the OSI Model Matters
+
+Application independence
+
+Simplified troubleshooting
+
+Easier equipment upgrades
+
+Encourages innovation without breaking the entire system
+
+The 7 OSI Layers
+7. Application
+
+Provides network services directly to applications used by end users.
+
+6. Presentation
+
+Ensures data is in a readable format.
+Handles encryption and decryption.
+
+5. Session
+
+Establishes, manages, and terminates communication sessions.
+Examples: NetBIOS, RPC.
+
+4. Transport
+
+Provides end-to-end communication.
+Protocols: TCP and UDP.
+
+3. Network
+
+Handles packet forwarding and routing.
+Uses IP addresses.
+
+2. Data Link
+
+Provides node-to-node delivery.
+Uses MAC addresses.
+Detects and corrects errors from the physical layer.
+
+1. Physical
+
+Transmits raw bits over a physical medium.
+Examples: Ethernet cables, Wi-Fi signals, fibre optics.
+
+TCP/IP Model
+
+A simplified and commonly used networking model.
+
+Layers
+
+Application
+
+Transport (TCP / UDP)
+
+Internet (IP)
+
+Network Access (combines OSI Layers 1 and 2)
+
+HTTPS
+
+Uses port 443
+
+Secure version of HTTP
+
+Encrypts data between client and server
+
+DNS (Domain Name System)
+
+DNS translates domain names into IP addresses, enabling internet navigation.
+
+DNS Components
+
+Name Servers – store DNS records
+
+Authoritative Servers – hold official DNS data
+
+Recursive Servers – query other servers and cache results
+
+Zone Files
+
+Zone files live on authoritative name servers and store DNS records in a structured format.
+
+Common DNS Records
+CNAME
+
+Maps one domain name to another domain name.
+
+MX (Mail Exchange)
+
+Specifies mail servers for a domain.
+Includes priority values to determine delivery order.
+
+TXT
+
+Stores text information about a domain.
+Commonly used for:
+
+SPF
+
+Domain ownership verification
+
+Security policies
+
+DNS Resolution Process
+
+User enters a domain name
+
+System checks local cache and /etc/hosts
+
+Query is sent to a recursive resolver
+
+Resolver queries:
+
+Root server
+
+TLD server
+
+Authoritative server
+
+IP address is returned to the user
+
+Result is cached for faster future lookups
+
+Importance of DNS Resolution
+
+Ensures high availability
+
+Critical for troubleshooting
+
+Essential for network configuration and management
+
+Authoritative vs Non-Authoritative Responses
+
+Authoritative: Comes directly from the source DNS server
+
+Non-authoritative: Comes from cache
+
+Summary
+
+Switches use MAC addresses within networks
+
+Routers use IP addresses between networks
+
+TCP is reliable; UDP is fast
+
+OSI provides a structured communication model
+
+DNS enables domain-to-IP translation
+
+Proper networking knowledge is critical for DevOps engineers
 Networking Fundamentals – DevOps Notes
 Routing
 What is Routing?
