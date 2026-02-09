@@ -1,4 +1,7 @@
 # General
+*.tfstate
+*.tfstate.backup
+.terraform/
 *.env
 *.pem
 .DS_Store
